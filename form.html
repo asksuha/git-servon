@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Borang Inventori</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 350px;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Borang Inventori</h2>
+    <form action="#" method="post">
+        <label for="nama_item">Nama Item:</label>
+        <input type="text" id="nama_item" name="nama_item" required>
+
+        <label for="kategori">Kategori:</label>
+        <select id="kategori" name="kategori" required>
+            <option value="">-- Pilih Kategori --</option>
+            <option value="Elektronik">Elektronik</option>
+            <option value="Perabot">Perabot</option>
+            <option value="Alat Tulis">Alat Tulis</option>
+            <option value="Lain-lain">Lain-lain</option>
+        </select>
+
+        <label for="kuantiti">Kuantiti:</label>
+        <input type="number" id="kuantiti" name="kuantiti" min="1" required>
+
+        <label for="harga">Harga (RM):</label>
+        <input type="number" id="harga" name="harga" step="0.01" required>
+
+        <label for="tarikh_masuk">Tarikh Masuk:</label>
+        <input type="date" id="tarikh_masuk" name="tarikh_masuk" required>
+
+        <button type="submit">Simpan</button>
+    </form>
+</div>
+
+</body>
+</html>
